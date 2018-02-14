@@ -1,0 +1,20 @@
+{
+  "name": "go-parcel-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "build":
+      "parcel build frontend/index.html -d frontend-dist --public-url /dist/",
+    "watch":
+      "parcel watch frontend/index.html -d frontend-dist --public-url /dist/"
+  },
+  "keywords": [],
+  "author": "Connor McCutcheon",
+  "devDependencies": {
+    "babel-preset-react-app": "^3.1.1",
+    "parcel-bundler": "^1.5.1"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}

@@ -1,0 +1,28 @@
+settings:
+  legacy:
+    force: false
+    interval: 0s
+server:
+  status: true
+  open: false
+  port: 5002
+  host: localhost
+schema:
+- name: go-parcel
+  path: .
+  commands:
+    run:
+      status: true
+  watcher:
+    paths:
+    - /
+    extensions:
+    - go
+    ignored_paths:
+    - .git
+    - .realize
+    - .cache
+    - vendor
+    - node_modules
+    - frontend
+    - frontend-dist
