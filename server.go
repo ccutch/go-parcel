@@ -12,6 +12,7 @@ var (
 )
 
 func main() {
+	flag.Parse()
 	if *prod {
 		buildFrontend()
 	} else {
